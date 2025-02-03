@@ -6,9 +6,18 @@ global playerHealth
 #turn 0 is dealer, turn 1 is player
 turn = 0
 shots = []
+playerInv = []
+dealerInv = []
 dealerHealth = 3
 playerHealth = 3
 length = r.randint(4, 8)
+def beer():
+    if turn == 0 && "beer" in dealerInv:
+        dealerInv.remove("beer")
+        shots.pop[0]
+    elif turn == 1 && "beer" in playerInv:
+        playerInv.remove("beer")
+        shots.pop[0]
 def reload():
     while len(shots) <= length:
         shots.append(r.randint(0, 1))
